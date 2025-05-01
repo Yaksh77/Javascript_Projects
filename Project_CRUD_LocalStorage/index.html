@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD Local Storage</title>
+</head>
+<body onload="readData()">
+   <div class="container">
+    <div class="form_container">
+        <form class="create_form">
+            <input type="text" class="name" placeholder="Name">
+            <input type="email" class="email" placeholder="Email">
+            <button type="button" id="btnCreate" onclick="create()">Create</button>
+        </form>
+           
+        <form class="update_form">
+            <input type="text" hidden class="id">
+             <input type="text" class="uname">
+            <input type="email" class="uemail">
+            <button id="btnUpdate" type="button">Update</button>
+        </form>
+        <div class="add_div">
+            <button id="btnAdd">Add+</button>
+        </div>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </thead>
+            <tbody class="data_table">
+
+            </tbody>
+        </table>
+    </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
